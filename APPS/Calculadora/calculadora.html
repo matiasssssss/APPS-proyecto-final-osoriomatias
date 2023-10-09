@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Calculadora</h1>
+    
+     <div class="calculadora">
+        <button id="cambiarColorBoton" class="small-button" onclick="cambiarColorFondo()"></button>
+        <input type="text" id="pantalla" readonly>
+        <br>
+        <input type="button" value="1" onclick="agregar('1')">
+        <input type="button" value="2" onclick="agregar('2')"> 
+        <input type="button" value="3" onclick="agregar('3')">
+        <input type="button" value="+" onclick="agregar('+')">
+        <br>
+        <input type="button" value="4" onclick="agregar('4')">
+        <input type="button" value="5" onclick="agregar('5')">
+        <input type="button" value="6" onclick="agregar('6')">
+        <input type="button" value="-" onclick="agregar('-')">
+        <br>
+        <input type="button" value="7" onclick="agregar('7')">
+        <input type="button" value="8" onclick="agregar('8')">
+        <input type="button" value="9" onclick="agregar('9')">
+        <input type="button" value="*" onclick="agregar('*')">
+        <br>
+        <input type="button" value="0" onclick="agregar('0')">
+        <input type="button" value="." onclick="agregar('.')">
+        <input type="button" value="/" onclick="agregar('/')">
+        <input type="button" value="=" onclick="calcular()">
+        <br>
+        <input type="button" value="C" onclick="borrar()">
+        <input type="button" value="←" onclick="borrarNumero()">
+        <input type="button" value="sin" onclick="calcularFuncion('sin')">
+        <input type="button" value="cos" onclick="calcularFuncion('cos')">
+        <input type="button" value="tan" onclick="calcularFuncion('tan')">
+        <input type="button" value="log" onclick="calcularFuncion('log')">
+        <input type="button" value="√" onclick="calcularFuncion('sqrt')">
+    </div>
+    <div class="historial" id="historial-container">
+        <h2>Historial de Operaciones</h2>
+        <button id="borrar-historial">Borrar</button>
+        <ul id="historial-lista">
+        </ul>
+      </div>
+    
+       
+      
+ <script src="./script.js"></script>
+</body>
+</html>
